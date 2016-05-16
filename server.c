@@ -58,7 +58,7 @@
 #define WRITE_BUF_SIZE (8192/4)
 
 static uv_loop_t* loop;
-static char* static_dir = "./public";
+static char* static_dir = "H:\\C\\public";
 static int static_dir_len = -1;
 
 KHASH_MAP_INIT_STR(mime_type, const char*)
@@ -406,6 +406,7 @@ on_fs_read(uv_fs_t *req) {
     destroy_response(response, 1);
     return;
   } else if (result == 0) {
+
     destroy_response(response, 1);
     return;
   }

@@ -10,7 +10,7 @@ include_directories(
 )
 
 if (CMAKE_COMPILER_IS_GNUCC)
-	set(CMAKE_C_FLAGS "-O2 -g -Wall -Wno-unused-function ${CMAKE_C_FLAGS}")
+	set(CMAKE_C_FLAGS "-O0 -g -Wall -Wno-unused-function ${CMAKE_C_FLAGS}")
 endif()
 
 include_directories(SYSTEM ${LIBUV_INCLUDE_DIRS})
